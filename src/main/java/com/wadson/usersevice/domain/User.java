@@ -60,6 +60,8 @@ public class User {
 	public void setRoles(java.util.Collection<Role> roles) {
 		this.roles = roles;
 	}
+	
+	public User() {}
 	public User(Long id, String name, String username, String password, Collection<Role> roles) {
 		super();
 		this.id = id;
