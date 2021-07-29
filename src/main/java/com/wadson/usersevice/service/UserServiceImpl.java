@@ -45,7 +45,7 @@ public class UserServiceImpl implements UserService{
 		 
 		 
 		 User user=userRepo.findByUsername(username);
-		 Role role=roleRepo.findByRolename(roleName);
+		 Role role=roleRepo.findByName(roleName);
 		 user.getRoles().add(role);
 		
 	}

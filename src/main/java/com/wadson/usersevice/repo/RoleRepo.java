@@ -6,5 +6,5 @@ import com.wadson.usersevice.domain.Role;
 
 public interface RoleRepo extends JpaRepository<Role,Long> {
 
-	Role findByRolename(String name);
+	Role findByName(String name);
 }
