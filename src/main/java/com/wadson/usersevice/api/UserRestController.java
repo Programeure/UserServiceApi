@@ -60,6 +60,10 @@ class RoleToUserForm{
 	public String getUsername() {
 		return username;
 	}
+
+	public getUserAndRole(){
+		return (!username.isEmpty() && rolename.isEmpty()) ? this.username+' '+this.rolenname:"Role and User are Empty";
+	}
 	public void setUsername(String username) {
 		this.username = username;
 	}
